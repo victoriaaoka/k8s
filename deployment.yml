@@ -1,0 +1,23 @@
+apiVersion: extensions/v1beta1
+kind: Deployment
+metadata:
+  name: simple-app1
+  labels:
+    #Project ID
+    app: simple-project-204912
+spec:
+  #Run two instances of our application
+  replicas: 2
+  template:
+    metadata:
+      labels:
+        app: simple-project-204912
+    spec:
+      #Container details
+      containers:
+        - name: simple-app1
+          image: gcr.io/simple-project-204912/simple-app-image:0.1
+          imagePullPolicy: Always
+          #Ports to expose
+          ports:
+          - containerPort: 8000
