@@ -27,7 +27,7 @@ deployment:
         # Decode the Service Account
         - base64 -i key.txt -d > ${HOME}/gcloud-service-key.json
         # Authenticate CircleCI with the service account file
-        - sudo /opt/google-cloud-sdk/bin/gcloud auth activate-service-account ${ACCOUNT_ID} --key-file ${HOME}/gcloud-service-key.json
+        - sudo /opt/google-cloud-sdk/bin/gcloud auth activate-service-account ${ACCOUNT_ID} --key-file ${HOME}/cred.json
         # Set the default project
         - sudo /opt/google-cloud-sdk/bin/gcloud config set project $PROJECT_ID
         # Set the default container
