@@ -9,7 +9,7 @@ describe('Index Tests', () => {
             request(app)
                 .get('/')
                 .expect(200)
-                .expect(JSON.stringify('Hey Vicky, welcome to root!!'))
+                .expect(JSON.stringify('Hey Victoria, welcome to root!!'))
                 .end(done);
         });
     });
