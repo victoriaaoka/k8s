@@ -26,6 +26,7 @@ deployment:
         - echo $SERVICE_KEY > key.txt
         # Decode the Service Account
         - base64 -i key.txt -d > ${HOME}/gcloud-service-key.json
+        - sudo apt-get install python-openssl
         # Authenticate CircleCI with the service account file
         - sudo /opt/google-cloud-sdk/bin/gcloud auth activate-service-account ${ACCOUNT_ID} --key-file ${HOME}/gcloud-service-key.json
         # Set the default project
