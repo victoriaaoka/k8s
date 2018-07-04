@@ -23,7 +23,7 @@ deployment:
         branch: master
         commands:
         # Save the string to a text file
-        - curl -H "Content-Type: application/json" --data '{"build": true}' -X POST https://registry.hub.docker.com/u/victoriaaoka/k8s/trigger/0bae1e05-cf13-4c96-b50f-b1e2c0dcc0b9/
+          - curl -H "Content-Type: application/json" --data '{"build": true}' -X POST https://registry.hub.docker.com/u/victoriaaoka/k8s/trigger/0bae1e05-cf13-4c96-b50f-b1e2c0dcc0b9/
     
 
 # deployment:
