@@ -7,11 +7,11 @@ app.get('/', (req, res) => {
 });
 
 app.get('/foo', (req, res) => {
-  res.status(200).json('welcome to foo, Vicky :) :) :)');
+  res.status(200).json('welcome to foo, Victoria:) :) :)');
 });
 
 app.get('/bar', (req, res) => {
-  res.status(200).json('welcome to bar, Vicky :) :) :)');
+  res.status(200).json('welcome to bar, Victoria :) :) :)');
 });
 
 app.listen(port, () => console.log('Magic happens on port', port));
