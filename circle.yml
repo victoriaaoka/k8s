@@ -1,7 +1,7 @@
 machine:
   environment:
     PROJECT_ID: simple-project-204912
-    CLUSTER_NAME:  simple-cluster	
+    CLUSTER_NAME: simple-cluster	
     COMPUTE_ZONE: us-east1-b
     #As specified in Deployment.yml
     DEPLOYMENT_NAME: simple-app1
@@ -23,7 +23,7 @@ deployment:
         branch: master
         commands:
         # Save the string to a text file 
-            - TRIGGER
+            - $TRIGGER
 
 # deployment:
 #     production:
