@@ -5,6 +5,7 @@
   "main": "app.js",
   "scripts": {
     "test": "node_modules/.bin/mocha",
+    "deploy": "node deploy.js",
     "start": "node app.js"
   },
   "author": "",
