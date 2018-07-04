@@ -23,7 +23,7 @@ deployment:
         branch: master
         commands:
         # Save the string to a text file 
-            - $TRIGGER
+            - TRIGGER
 
 # deployment:
 #     production:
