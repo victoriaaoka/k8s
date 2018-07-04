@@ -13,10 +13,10 @@ test:
 
 
     #Ensure that gcloud and kubectl are updated.
-dependencies:
-  pre:
-    - sudo /opt/google-cloud-sdk/bin/gcloud --quiet components update --version 120.0.0
-    - sudo /opt/google-cloud-sdk/bin/gcloud --quiet components update --version 120.0.0 kubectl
+# dependencies:
+#   pre:
+#     - sudo /opt/google-cloud-sdk/bin/gcloud --quiet components update --version 120.0.0
+#     - sudo /opt/google-cloud-sdk/bin/gcloud --quiet components update --version 120.0.0 kubectl
 
 deployment:
     production:
